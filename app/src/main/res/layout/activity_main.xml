@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kstar.easyshapeutil.MainActivity">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/tv1"
+        android:background="@drawable/bg_rect"
+        android:textSize="20sp"
+        android:text="纯矩形纯色"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="gone"
+        android:padding="6dp"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/tv2"
+        android:background="@drawable/bg_rect_corner"
+        android:textSize="20sp"
+        android:text="倒角矩形纯色"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="gone"
+        android:padding="6dp"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/tv3"
+        android:background="@drawable/bg_rect_corner_stroke"
+        android:textSize="20sp"
+        android:text="倒角矩形描边纯色"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:padding="6dp"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/tv4"
+        android:background="@drawable/bg_rect_gradient"
+        android:textSize="20sp"
+        android:text="矩形渐变"
+        android:layout_width="150dp"
+        android:layout_height="80dp" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:gravity="center"
+            android:text="4"
+            android:id="@+id/v1"
+            android:background="@color/green"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:text="6"
+            android:id="@+id/v2"
+            android:background="@color/brown"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:text="8"
+            android:id="@+id/v3"
+            android:background="@color/colorAccent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:text="10"
+            android:id="@+id/v4"
+            android:background="@color/liteBlue"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>
